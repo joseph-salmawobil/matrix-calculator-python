@@ -1,0 +1,1358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>890</width>
+    <height>592</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <weight>50</weight>
+    <bold>false</bold>
+    <underline>false</underline>
+    <strikeout>false</strikeout>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>BJ MATRIX CALCULATOR</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icon.qrc">
+    <normaloff>:/images/Images/Matrix Calc.png</normaloff>:/images/Images/Matrix Calc.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>0</y>
+      <width>512</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="openBtn">
+       <property name="text">
+        <string>Open</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="saveBtn">
+       <property name="font">
+        <font>
+         <stylestrategy>PreferDefault</stylestrategy>
+        </font>
+       </property>
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="clearBtn">
+       <property name="font">
+        <font>
+         <stylestrategy>PreferDefault</stylestrategy>
+        </font>
+       </property>
+       <property name="text">
+        <string>Clear</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="manualBtn">
+       <property name="font">
+        <font>
+         <stylestrategy>PreferDefault</stylestrategy>
+        </font>
+       </property>
+       <property name="text">
+        <string>Manual</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="aboutBtn">
+       <property name="font">
+        <font>
+         <stylestrategy>PreferDefault</stylestrategy>
+        </font>
+       </property>
+       <property name="text">
+        <string>About</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>544</x>
+      <y>29</y>
+      <width>351</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <stylestrategy>NoAntialias</stylestrategy>
+     </font>
+    </property>
+    <property name="title">
+     <string>RESULTS</string>
+    </property>
+    <widget class="QPlainTextEdit" name="resultsEntry">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>351</width>
+       <height>501</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <strikeout>false</strikeout>
+       <stylestrategy>NoAntialias</stylestrategy>
+      </font>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::DefaultContextMenu</enum>
+     </property>
+     <property name="toolTip">
+      <string>Results Box</string>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustIgnored</enum>
+     </property>
+     <property name="lineWrapMode">
+      <enum>QPlainTextEdit::NoWrap</enum>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="overwriteMode">
+      <bool>false</bool>
+     </property>
+     <property name="tabStopWidth">
+      <number>80</number>
+     </property>
+     <property name="cursorWidth">
+      <number>1</number>
+     </property>
+     <property name="maximumBlockCount">
+      <number>0</number>
+     </property>
+     <property name="backgroundVisible">
+      <bool>false</bool>
+     </property>
+     <property name="centerOnScroll">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>11</y>
+      <width>266</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>21</y>
+       <width>259</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <stylestrategy>NoAntialias</stylestrategy>
+      </font>
+     </property>
+     <property name="title">
+      <string>MATRIX A</string>
+     </property>
+     <widget class="QPlainTextEdit" name="matAEntry">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>251</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Matrix A</string>
+      </property>
+      <property name="plainText">
+       <string>1 0 0
+0 1 0
+0 0 1</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>210</y>
+       <width>259</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <stylestrategy>NoAntialias</stylestrategy>
+      </font>
+     </property>
+     <property name="title">
+      <string>MATRIX B</string>
+     </property>
+     <widget class="QPlainTextEdit" name="matBEntry">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>19</y>
+        <width>251</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <stylestrategy>NoAntialias</stylestrategy>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="toolTip">
+       <string>Matrix B</string>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="plainText">
+       <string>1 0 0
+0 1 0
+0 0 1</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="tabStopWidth">
+       <number>80</number>
+      </property>
+      <property name="backgroundVisible">
+       <bool>false</bool>
+      </property>
+      <property name="centerOnScroll">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="swapBtn">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>0</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <stylestrategy>NoAntialias</stylestrategy>
+       </font>
+      </property>
+      <property name="text">
+       <string>SWAP</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_6">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>400</y>
+       <width>261</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QFrame" name="frame_8">
+      <property name="geometry">
+       <rect>
+        <x>4</x>
+        <y>18</y>
+        <width>251</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <widget class="QGroupBox" name="groupBox_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>241</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <stylestrategy>NoAntialias</stylestrategy>
+        </font>
+       </property>
+       <property name="title">
+        <string>Coef(x)</string>
+       </property>
+       <widget class="QLineEdit" name="x_val">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>241</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>Coefficient of x</string>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhNone</set>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Normal</enum>
+        </property>
+        <property name="dragEnabled">
+         <bool>false</bool>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+        <property name="cursorMoveStyle">
+         <enum>Qt::VisualMoveStyle</enum>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_10">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>241</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <stylestrategy>NoAntialias</stylestrategy>
+        </font>
+       </property>
+       <property name="title">
+        <string>Precision</string>
+       </property>
+       <widget class="QComboBox" name="precisionVal">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>241</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>Precision of results</string>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <property name="currentIndex">
+         <number>2</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>6</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>7</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>8</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>9</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>273</x>
+      <y>19</y>
+      <width>265</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>261</width>
+       <height>521</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="4" column="2">
+       <widget class="QPushButton" name="arrMulAB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Matrix Multiplication</string>
+        </property>
+        <property name="text">
+         <string>A.*B</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QPushButton" name="minB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+          <kerning>true</kerning>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Minimum of Matrix B</string>
+        </property>
+        <property name="text">
+         <string>Min(B)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="invA">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Matrix A inverse</string>
+        </property>
+        <property name="text">
+         <string>A⁻¹</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QPushButton" name="detB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Determinant of B</string>
+        </property>
+        <property name="text">
+         <string>|B|</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="addMatAB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Matrix A plus Matrix B</string>
+        </property>
+        <property name="text">
+         <string>A+B</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QPushButton" name="arrdivmatAB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Array Division</string>
+        </property>
+        <property name="text">
+         <string>A./B</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="0">
+       <widget class="QPushButton" name="luA">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>LU factorization of A</string>
+        </property>
+        <property name="text">
+         <string>LU(A)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="1">
+       <widget class="QPushButton" name="svdB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>singular-value Discomposition of B, B= USV</string>
+        </property>
+        <property name="text">
+         <string>SVD(B)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="1">
+       <widget class="QPushButton" name="cholB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Cholesky factorization of B</string>
+        </property>
+        <property name="text">
+         <string>Chol(B)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="2">
+       <widget class="QPushButton" name="matApowx">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Matrix A power x</string>
+        </property>
+        <property name="text">
+         <string>Aˣ</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="2">
+       <widget class="QPushButton" name="logicalXOR">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Logical Exclusive OR; XOR</string>
+        </property>
+        <property name="text">
+         <string>A#B</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QPushButton" name="rankB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Rank of B</string>
+        </property>
+        <property name="text">
+         <string>Rank(B)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="1">
+       <widget class="QPushButton" name="luB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>LU factorization of B</string>
+        </property>
+        <property name="text">
+         <string>LU(B)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="1">
+       <widget class="QPushButton" name="eigB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Eigenvalues of B</string>
+        </property>
+        <property name="text">
+         <string>Eig(B)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="1">
+       <widget class="QPushButton" name="qrB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Orthogonal-triangular decompositon; B=QR</string>
+        </property>
+        <property name="text">
+         <string>QR(B)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="2" rowspan="2">
+       <widget class="QPushButton" name="autoBtn">
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>53</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+          <underline>true</underline>
+          <strikeout>false</strikeout>
+          <stylestrategy>NoAntialias</stylestrategy>
+          <kerning>false</kerning>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Compute all functions</string>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>Auto</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="2">
+       <widget class="QPushButton" name="matAmulx">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Matrix A multiply x</string>
+        </property>
+        <property name="text">
+         <string>A*x</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QPushButton" name="normB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Norm of B</string>
+        </property>
+        <property name="text">
+         <string>||B||₂</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="2">
+       <widget class="QPushButton" name="logicalOR">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Element-wise logical OR</string>
+        </property>
+        <property name="text">
+         <string>A|B</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QPushButton" name="proAB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Matrix Product</string>
+        </property>
+        <property name="text">
+         <string>A*B</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QPushButton" name="dimB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Dimension of B</string>
+        </property>
+        <property name="text">
+         <string>Dim(B)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2">
+       <widget class="QPushButton" name="logicalAND">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Element-wise logical AND</string>
+        </property>
+        <property name="text">
+         <string>A &amp;&amp; B</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QPushButton" name="dimA">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Dimension of A</string>
+        </property>
+        <property name="text">
+         <string>Dim(A)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="invB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Matrix B inverse</string>
+        </property>
+        <property name="text">
+         <string>B⁻¹</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="transA">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Matrix A transpose</string>
+        </property>
+        <property name="text">
+         <string>Aᵀ</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="maxA">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Maximun of Matrix A</string>
+        </property>
+        <property name="text">
+         <string>Max(A)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QPushButton" name="traceA">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Trace of A</string>
+        </property>
+        <property name="text">
+         <string>Trace(A)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QPushButton" name="detA">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Determinant of A</string>
+        </property>
+        <property name="text">
+         <string>|A|</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QPushButton" name="minA">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Minimum of Matrix A</string>
+        </property>
+        <property name="text">
+         <string>Min(A)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="matB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Matrix B</string>
+        </property>
+        <property name="text">
+         <string>B</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QPushButton" name="divmatAB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Matrix Division</string>
+        </property>
+        <property name="text">
+         <string>A/B</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="transB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Matrix B Transpose</string>
+        </property>
+        <property name="text">
+         <string>Bᵀ</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QPushButton" name="rankA">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Rank of A</string>
+        </property>
+        <property name="text">
+         <string>Rank(A)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QPushButton" name="maxB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Maximun of Matrix B</string>
+        </property>
+        <property name="text">
+         <string>Max(B)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="subMatAB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Matrix A plus Matrix B</string>
+        </property>
+        <property name="text">
+         <string>A-B</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="2">
+       <widget class="QPushButton" name="matBpowx">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Matrix B power x</string>
+        </property>
+        <property name="text">
+         <string>Bˣ</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QPushButton" name="traceB">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Trace of B</string>
+        </property>
+        <property name="text">
+         <string>Trace(B)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="allB">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="text">
+         <string>ALL B↓</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="QPushButton" name="eigA">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Eigenvalues of A</string>
+        </property>
+        <property name="text">
+         <string>Eig(A)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="2">
+       <widget class="QPushButton" name="matBmulx">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Matrix B multiply  x</string>
+        </property>
+        <property name="text">
+         <string>B*x</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="0">
+       <widget class="QPushButton" name="qrA">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Orthogonal-triangular decompositon; A=QR</string>
+        </property>
+        <property name="text">
+         <string>QR(A)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="0">
+       <widget class="QPushButton" name="svdA">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>singular-value Discomposition of A, A= USV</string>
+        </property>
+        <property name="text">
+         <string>SVD(A)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="matA">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Matrix A</string>
+        </property>
+        <property name="text">
+         <string>A</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QPushButton" name="normA">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Norm of A</string>
+        </property>
+        <property name="text">
+         <string>||A||₂</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="allA">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="text">
+         <string>ALL A ↓</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="allAB">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="text">
+         <string>All AB ↓</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="0">
+       <widget class="QPushButton" name="cholA">
+        <property name="font">
+         <font>
+          <stylestrategy>NoAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Cholesky-Factorization of A</string>
+        </property>
+        <property name="text">
+         <string>Chol(A)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <zorder>frame</zorder>
+   <zorder>horizontalLayoutWidget</zorder>
+   <zorder>groupBox_3</zorder>
+   <zorder>frame_2</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>890</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSave"/>
+    <addaction name="actionOpen"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionManual"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/images/Images/save.png</normaloff>:/images/Images/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/images/Images/open.png</normaloff>:/images/Images/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/images/Images/about.png</normaloff>:/images/Images/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionManual">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/images/Images/help.png</normaloff>:/images/Images/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>Manual</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>clearBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>resultsEntry</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>153</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>658</x>
+     <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSave</sender>
+   <signal>triggered()</signal>
+   <receiver>saveBtn</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>135</x>
+     <y>35</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionAbout</sender>
+   <signal>triggered()</signal>
+   <receiver>aboutBtn</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>393</x>
+     <y>35</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionManual</sender>
+   <signal>triggered()</signal>
+   <receiver>manualBtn</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>307</x>
+     <y>35</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
